@@ -51,9 +51,6 @@ Dùng lại code của lab 2 để vector hóa ảnh trong các thư mục train
 ```plaintext
 dataset/
 ├── README.md              # File mô tả chi tiết dataset
-├── train.txt
-├── val.txt
-├── test.txt
 ├── train/
 │   ├── cardboard/
 │   ├── glass/
