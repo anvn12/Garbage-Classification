@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 430" width="1150" height="430" style="font-family: &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif; background-color: #f8fafc;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#334155" />
+    </marker>
+    <marker id="double-arrow-start" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 10 1 L 0 5 L 10 9 z" fill="#334155" />
+    </marker>
+  </defs>
+
+  
+  <text x="340" y="32" font-size="15" font-weight="700" fill="#1e293b" text-anchor="middle">Feature Maps</text>
+  <line x1="145" y1="45" x2="545" y2="45" stroke="#334155" stroke-width="1.5" marker-start="url(#double-arrow-start)" marker-end="url(#arrow)" />
+
+  <text x="895" y="32" font-size="15" font-weight="700" fill="#1e293b" text-anchor="middle">Fully Connected Layers</text>
+  
+  <path d="M 675 55 L 675 45 L 890 45 L 895 38 L 900 45 L 1065 45 L 1065 55" fill="none" stroke="#475569" stroke-width="1.5" />
+
+  
+  <g id="input-layer">
+    
+    <rect x="35" y="135" width="76" height="76" fill="#93c5fd" stroke="#1e3a8a" stroke-width="1.2" />
+    <rect x="42" y="142" width="76" height="76" fill="#86efac" stroke="#14532d" stroke-width="1.2" />
+    <rect x="49" y="149" width="76" height="76" fill="#fca5a5" stroke="#7f1d1d" stroke-width="1.2" />
+    <text x="84" y="255" font-size="13" font-weight="700" fill="#0f172a" text-anchor="middle">Input Image</text>
+    <text x="84" y="273" font-size="12" fill="#475569" text-anchor="middle">3 × 64 × 64</text>
+  </g>
+
+  
+  <g id="conv1">
+    
+    <rect x="170" y="110" width="72" height="72" fill="#86efac" stroke="#166534" stroke-width="1" />
+    <rect x="175" y="115" width="72" height="72" fill="#4ade80" stroke="#166534" stroke-width="1" />
+    <rect x="180" y="120" width="72" height="72" fill="#22c55e" stroke="#166534" stroke-width="1" />
+    <rect x="185" y="125" width="72" height="72" fill="#16a34a" stroke="#14532d" stroke-width="1.2" />
+    <rect x="190" y="130" width="72" height="72" fill="#15803d" stroke="#14532d" stroke-width="1.2" />
+    <rect x="195" y="135" width="72" height="72" fill="#166534" stroke="#052e16" stroke-width="1.3" />
+    <text x="222" y="232" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Conv 3×3 + ReLU</text>
+    <text x="222" y="248" font-size="11.5" fill="#475569" text-anchor="middle">16 × 62 × 62</text>
+  </g>
+
+  
+  <rect x="75" y="170" width="14" height="14" fill="none" stroke="#0f172a" stroke-width="1.2" />
+  <line x1="89" y1="170" x2="225" y2="165" stroke="#0f172a" stroke-width="1" />
+  <line x1="89" y1="184" x2="225" y2="165" stroke="#0f172a" stroke-width="1" />
+  <circle cx="225" cy="165" r="2.2" fill="#ffffff" stroke="#0f172a" stroke-width="1" />
+
+  
+  <g id="pool1">
+    <text x="342" y="95" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">MaxPool 2×2</text>
+    <rect x="305" y="125" width="54" height="54" fill="#86efac" stroke="#166534" stroke-width="1" />
+    <rect x="310" y="130" width="54" height="54" fill="#4ade80" stroke="#166534" stroke-width="1" />
+    <rect x="315" y="135" width="54" height="54" fill="#22c55e" stroke="#166534" stroke-width="1" />
+    <rect x="320" y="140" width="54" height="54" fill="#16a34a" stroke="#14532d" stroke-width="1.2" />
+    <rect x="325" y="145" width="54" height="54" fill="#15803d" stroke="#052e16" stroke-width="1.3" />
+    <text x="342" y="220" font-size="11.5" font-weight="600" fill="#334155" text-anchor="middle">16 × 31 × 31</text>
+  </g>
+
+  
+  <rect x="235" y="175" width="12" height="12" fill="none" stroke="#0f172a" stroke-width="1.2" />
+  <line x1="247" y1="175" x2="348" y2="172" stroke="#0f172a" stroke-width="1" />
+  <line x1="247" y1="187" x2="348" y2="172" stroke="#0f172a" stroke-width="1" />
+  <circle cx="348" cy="172" r="2.2" fill="#ffffff" stroke="#0f172a" stroke-width="1" />
+
+  
+  <g id="conv2">
+    <rect x="410" y="112" width="48" height="48" fill="#bbf7d0" stroke="#166534" stroke-width="1" />
+    <rect x="414" y="116" width="48" height="48" fill="#86efac" stroke="#166534" stroke-width="1" />
+    <rect x="418" y="120" width="48" height="48" fill="#4ade80" stroke="#166534" stroke-width="1" />
+    <rect x="422" y="124" width="48" height="48" fill="#22c55e" stroke="#166534" stroke-width="1" />
+    <rect x="426" y="128" width="48" height="48" fill="#16a34a" stroke="#14532d" stroke-width="1.2" />
+    <rect x="430" y="132" width="48" height="48" fill="#15803d" stroke="#14532d" stroke-width="1.2" />
+    <rect x="434" y="136" width="48" height="48" fill="#166534" stroke="#052e16" stroke-width="1.3" />
+    <text x="448" y="212" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">Conv 5×5 + ReLU</text>
+    <text x="448" y="228" font-size="11.5" fill="#475569" text-anchor="middle">32 × 27 × 27</text>
+  </g>
+
+  
+  <rect x="345" y="155" width="14" height="14" fill="none" stroke="#0f172a" stroke-width="1.2" />
+  <line x1="359" y1="155" x2="455" y2="158" stroke="#0f172a" stroke-width="1" />
+  <line x1="359" y1="169" x2="455" y2="158" stroke="#0f172a" stroke-width="1" />
+  <circle cx="455" cy="158" r="2.2" fill="#ffffff" stroke="#0f172a" stroke-width="1" />
+
+  
+  <g id="pool2">
+    <text x="550" y="95" font-size="12" font-weight="700" fill="#0f172a" text-anchor="middle">MaxPool 2×2</text>
+    <rect x="515" y="128" width="34" height="34" fill="#bbf7d0" stroke="#166534" stroke-width="1" />
+    <rect x="519" y="132" width="34" height="34" fill="#86efac" stroke="#166534" stroke-width="1" />
+    <rect x="523" y="136" width="34" height="34" fill="#4ade80" stroke="#166534" stroke-width="1" />
+    <rect x="527" y="140" width="34" height="34" fill="#22c55e" stroke="#166534" stroke-width="1" />
+    <rect x="531" y="144" width="34" height="34" fill="#16a34a" stroke="#14532d" stroke-width="1.2" />
+    <rect x="535" y="148" width="34" height="34" fill="#15803d" stroke="#052e16" stroke-width="1.3" />
+    <text x="550" y="205" font-size="11.5" font-weight="600" fill="#334155" text-anchor="middle">32 × 13 × 13</text>
+  </g>
+
+  
+  <rect x="455" y="162" width="11" height="11" fill="none" stroke="#0f172a" stroke-width="1.2" />
+  <line x1="466" y1="162" x2="548" y2="165" stroke="#0f172a" stroke-width="1" />
+  <line x1="466" y1="173" x2="548" y2="165" stroke="#0f172a" stroke-width="1" />
+  <circle cx="548" cy="165" r="2.2" fill="#ffffff" stroke="#0f172a" stroke-width="1" />
+
+  
+  <g id="flatten">
+    
+    <line x1="569" y1="148" x2="655" y2="75" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2" />
+    <line x1="569" y1="182" x2="655" y2="295" stroke="#64748b" stroke-width="1" stroke-dasharray="3,2" />
+
+    <rect x="655" y="75" width="24" height="220" rx="4" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
+    <text x="667" y="185" font-size="12" font-weight="700" fill="#713f12" text-anchor="middle" transform="rotate(-90 667 185)">Flattened</text>
+  </g>
+
+  
+  
+  <g stroke="#94a3b8" stroke-width="0.9">
+    
+    <line x1="679" y1="185" x2="795" y2="85" />
+    <line x1="679" y1="185" x2="795" y2="130" />
+    <line x1="679" y1="185" x2="795" y2="175" />
+    <line x1="679" y1="185" x2="795" y2="220" />
+    <line x1="679" y1="185" x2="795" y2="285" />
+  </g>
+
+  
+  <g stroke="#cbd5e1" stroke-width="0.8">
+    <line x1="795" y1="85" x2="925" y2="105" /><line x1="795" y1="85" x2="925" y2="150" /><line x1="795" y1="85" x2="925" y2="195" /><line x1="795" y1="85" x2="925" y2="265" />
+    <line x1="795" y1="130" x2="925" y2="105" /><line x1="795" y1="130" x2="925" y2="150" /><line x1="795" y1="130" x2="925" y2="195" /><line x1="795" y1="130" x2="925" y2="265" />
+    <line x1="795" y1="175" x2="925" y2="105" /><line x1="795" y1="175" x2="925" y2="150" /><line x1="795" y1="175" x2="925" y2="195" /><line x1="795" y1="175" x2="925" y2="265" />
+    <line x1="795" y1="220" x2="925" y2="105" /><line x1="795" y1="220" x2="925" y2="150" /><line x1="795" y1="220" x2="925" y2="195" /><line x1="795" y1="220" x2="925" y2="265" />
+    <line x1="795" y1="285" x2="925" y2="105" /><line x1="795" y1="285" x2="925" y2="150" /><line x1="795" y1="285" x2="925" y2="195" /><line x1="795" y1="285" x2="925" y2="265" />
+  </g>
+
+  
+  <g stroke="#cbd5e1" stroke-width="0.8">
+    <line x1="925" y1="105" x2="1055" y2="95" /><line x1="925" y1="105" x2="1055" y2="140" /><line x1="925" y1="105" x2="1055" y2="185" /><line x1="925" y1="105" x2="1055" y2="230" /><line x1="925" y1="105" x2="1055" y2="275" />
+    <line x1="925" y1="150" x2="1055" y2="95" /><line x1="925" y1="150" x2="1055" y2="140" /><line x1="925" y1="150" x2="1055" y2="185" /><line x1="925" y1="150" x2="1055" y2="230" /><line x1="925" y1="150" x2="1055" y2="275" />
+    <line x1="925" y1="195" x2="1055" y2="95" /><line x1="925" y1="195" x2="1055" y2="140" /><line x1="925" y1="195" x2="1055" y2="185" /><line x1="925" y1="195" x2="1055" y2="230" /><line x1="925" y1="195" x2="1055" y2="275" />
+    <line x1="925" y1="265" x2="1055" y2="95" /><line x1="925" y1="265" x2="1055" y2="140" /><line x1="925" y1="265" x2="1055" y2="185" /><line x1="925" y1="265" x2="1055" y2="230" /><line x1="925" y1="265" x2="1055" y2="275" />
+  </g>
+
+  
+  <g id="fc1-nodes">
+    <circle cx="795" cy="85" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="795" cy="130" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="795" cy="175" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="795" cy="220" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="795" cy="246" r="2" fill="#334155" /><circle cx="795" cy="253" r="2" fill="#334155" /><circle cx="795" cy="260" r="2" fill="#334155" />
+    <circle cx="795" cy="285" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <text x="795" y="318" font-size="11.5" font-weight="700" fill="#1e293b" text-anchor="middle">FC: 128</text>
+    <text x="795" y="332" font-size="10.5" fill="#64748b" text-anchor="middle">+ ReLU</text>
+  </g>
+
+  
+  <g id="fc2-nodes">
+    <circle cx="925" cy="105" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="925" cy="150" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="925" cy="195" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <circle cx="925" cy="224" r="2" fill="#334155" /><circle cx="925" cy="231" r="2" fill="#334155" /><circle cx="925" cy="238" r="2" fill="#334155" />
+    <circle cx="925" cy="265" r="12" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5" />
+    <text x="925" y="318" font-size="11.5" font-weight="700" fill="#1e293b" text-anchor="middle">FC: 64</text>
+    <text x="925" y="332" font-size="10.5" fill="#64748b" text-anchor="middle">+ ReLU</text>
+  </g>
+
+  
+  <g id="output-nodes">
+    <circle cx="1055" cy="95" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5" />
+    <text x="1076" y="99" font-size="12" font-weight="700" fill="#0f172a">z₁</text>
+
+    <circle cx="1055" cy="140" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5" />
+    <text x="1076" y="144" font-size="12" font-weight="700" fill="#0f172a">z₂</text>
+
+    <circle cx="1055" cy="185" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5" />
+    <text x="1076" y="189" font-size="12" font-weight="700" fill="#0f172a">z₃</text>
+
+    <circle cx="1055" cy="230" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5" />
+    <text x="1076" y="234" font-size="12" font-weight="700" fill="#0f172a">z₄</text>
+
+    <circle cx="1055" cy="275" r="12" fill="#fca5a5" stroke="#dc2626" stroke-width="1.5" />
+    <text x="1076" y="279" font-size="12" font-weight="700" fill="#0f172a">z₅</text>
+
+    <text x="1055" y="318" font-size="11.5" font-weight="700" fill="#1e293b" text-anchor="middle">5 Logits</text>
+  </g>
+
+  
+  
+  <path d="M 35 355 L 35 368 L 642 368 L 642 355" fill="none" stroke="#334155" stroke-width="1.5" />
+  <text x="338" y="392" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Feature Extraction</text>
+
+  
+  <path d="M 655 355 L 655 368 L 1095 368 L 1095 355" fill="none" stroke="#334155" stroke-width="1.5" />
+  <text x="875" y="392" font-size="14" font-weight="700" fill="#0f172a" text-anchor="middle">Classification</text>
+</svg>
